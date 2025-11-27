@@ -1,5 +1,5 @@
 const express = require('express');
-const {serverConfig} = require('./config') ;
+const {ServerConfig, Logger} = require('./config') ;
 
 const app = express();
 const apiRoutes = require('./routes')
@@ -8,6 +8,7 @@ const apiRoutes = require('./routes')
 app.use('/api',apiRoutes);
 
 
-app.listen(serverConfig.PORT,()=>{
-    console.log(`Server is up and running on port: ${serverConfig.PORT}`)
+app.listen(ServerConfig.PORT,()=>{
+    console.log(`Server is up and running on port: ${ServerConfig.PORT}`)
+    Logger.info({msg:"Hello from the server"},{error: "I under the water!!"})
 })
