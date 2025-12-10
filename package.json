@@ -1,5 +1,5 @@
 {
-  "name": "base_nodejs_project_template",
+  "name": "raising_superstars_assignment",
   "version": "1.0.0",
   "description": "It is a basic nodeJS template which can be used in all express project.",
   "main": "index.js",
